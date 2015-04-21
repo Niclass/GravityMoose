@@ -16,9 +16,13 @@ public class moosecontroller : MonoBehaviour {
 	float roofRadius = 0.2f;
 	public LayerMask whatIsRoof;
 
+
+
 	void Start () 
 	{
 		anim = GetComponent<Animator> ();
+
+
 	}
 	
 	// Update is called once per frame
@@ -33,6 +37,8 @@ public class moosecontroller : MonoBehaviour {
 		anim.SetFloat ("Speed", Mathf.Abs (1));
 
 		GetComponent<Rigidbody2D>().velocity = new Vector2 (1 * maxSpeed, GetComponent<Rigidbody2D>().velocity.y);
+
+
 	}
 
 	void Update()
