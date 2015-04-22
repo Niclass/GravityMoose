@@ -3,13 +3,13 @@ using System.Collections;
 
 public class CameraRunnerScripte : MonoBehaviour {
 
-	public Transform player;
+	public float speed;
 
 	
 	// Update is called once per frame
 	void Update () 
 	{
-		transform.position = new Vector3 (player.position.x + 6, 0, -10);
+		this.transform.position = new Vector3 (transform.position.x + (speed * Time.deltaTime), transform.position.y, transform.position.z);
 
 	}
 }
