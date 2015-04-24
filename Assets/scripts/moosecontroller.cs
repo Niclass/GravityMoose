@@ -16,7 +16,7 @@ public class moosecontroller : MonoBehaviour {
 	float roofRadius = 0.2f;
 	public LayerMask whatIsRoof;
 
-
+	HudScript hud;
 
 	void Start () 
 	{
@@ -56,11 +56,17 @@ public class moosecontroller : MonoBehaviour {
 			GetComponent<Rigidbody2D>().gravityScale *= -1;
 		}
 
-
-
 	}
 
-
+	void OnTriggerEnter2D(Collider2D other)
+	{
+		if (other.gameObject.CompareTag ("Power Up")) 
+		{
+			hud = GameObject.Find("Character").GetComponent<HudScript>();
+			hud.IncreaseScore(100);
+			Destroy(other.gameObject);
+		}
+	}
 
 
 }
