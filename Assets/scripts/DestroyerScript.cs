@@ -7,7 +7,7 @@ public class DestroyerScript : MonoBehaviour {
 	{
 		if (other.tag == "Player") 
 		{
-			Debug.Break();
+			Debug.Log("DU ÄR DÖD ÄLGJÄVEL!!11");
 			return;
 		}
 

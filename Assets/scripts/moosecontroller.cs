@@ -18,6 +18,8 @@ public class moosecontroller : MonoBehaviour {
 
 	HudScript hud;
 
+
+
 	void Start () 
 	{
 		anim = GetComponent<Animator> ();
@@ -58,15 +60,7 @@ public class moosecontroller : MonoBehaviour {
 
 	}
 
-	void OnTriggerEnter2D(Collider2D other)
-	{
-		if (other.gameObject.CompareTag ("Power Up")) 
-		{
-			hud = GameObject.Find("Character").GetComponent<HudScript>();
-			hud.IncreaseScore(100);
-			Destroy(other.gameObject);
-		}
-	}
+
 
 
 }
