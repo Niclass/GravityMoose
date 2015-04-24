@@ -5,6 +5,7 @@ public class HudScript : MonoBehaviour {
 
 	float playerScore = 0;
 
+
 	void Update () 
 	{
 		playerScore += Time.deltaTime;
@@ -13,6 +14,12 @@ public class HudScript : MonoBehaviour {
 	public void IncreaseScore(int amount)
 	{
 		playerScore += amount;
+
+	}
+
+	void OnDisable()
+	{
+		PlayerPrefs.SetInt ("Score", (int)playerScore);
 	}
 
 	void OnGUI()
