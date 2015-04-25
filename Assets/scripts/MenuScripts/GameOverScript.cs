@@ -7,7 +7,7 @@ public class GameOverScript : MonoBehaviour {
 
 	void Start () 
 	{
-		score = PlayerPrefs.GetInt ("Score") * 10;
+		score = PlayerPrefs.GetInt ("Score");
 	}
 	void OnGUI()
 	{
@@ -15,6 +15,16 @@ public class GameOverScript : MonoBehaviour {
 		if (GUI.Button (new Rect (Screen.width / 2 - 30, 350, 60, 30), "Restart")) 
 		{
 			Application.LoadLevel(1);
+		}
+
+		if (GUI.Button (new Rect (Screen.width / 2 - 30, 400, 100, 30), "High Score")) 
+		{
+			Application.LoadLevel(0);
+		}
+
+		if (GUI.Button (new Rect (Screen.width / 2 - 30, 450, 60, 30), "Menu")) 
+		{
+			Application.LoadLevel(0);
 		}
 	}
 	
