@@ -4,18 +4,22 @@ using System.Collections;
 public class DestroyerScript : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other)
-	{
+	{// gör så att när spelaren där så laddas game over scenen
 		if (other.tag == "Player") 
 		{
 			Application.LoadLevel(2);
 			return;
 		}
 
-		if (other.gameObject.transform.parent) {
-			Destroy (other.gameObject.transform.parent.gameObject);
-		} else 
-		{
-			Destroy (other.gameObject);
-		}
+
+		if (other.gameObject.transform) 
+		{// destroyern förstör allt annat som går igenom
+            Destroy(other.gameObject);
+		} 
+
+        
+
+
+
 	}
 }

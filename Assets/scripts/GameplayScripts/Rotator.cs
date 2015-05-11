@@ -6,7 +6,8 @@ public class Rotator : MonoBehaviour {
 
 	void Update () 
 	{
-		transform.Rotate (new Vector3 (0, 0, 30) * Time.deltaTime);
+        // gör så power ups roterar
+		transform.Rotate (new Vector3 (45, 30, 60) * Time.deltaTime);
 
 	}
 }

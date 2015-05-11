@@ -7,10 +7,12 @@ public class GameOverScript : MonoBehaviour {
 
 	void Start () 
 	{
+        //laddar in poängen spelaren fick innan game over
 		score = PlayerPrefs.GetInt ("Score");
 	}
 	void OnGUI()
 	{
+        // ritar upp knapparna och visar vilken scen de laddar.
 		GUI.Label (new Rect (Screen.width / 2 - 40, 300, 80, 30), "Score: " + score);
 		if (GUI.Button (new Rect (Screen.width / 2 - 30, 350, 60, 30), "Restart")) 
 		{

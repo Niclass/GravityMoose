@@ -22,6 +22,7 @@ public class moosecontroller : MonoBehaviour {
 
 	void Start () 
 	{
+        // hämtar animationen till älgen
 		anim = GetComponent<Animator> ();
 	}
 
@@ -30,14 +31,17 @@ public class moosecontroller : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () 
 	{
+        // Kollar om boolarna är sanna eller inte
 		grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatIsGround);
 		anim.SetBool ("Ground", grounded);
 
 		onRoof = Physics2D.OverlapCircle (roofCheck.position, roofRadius, whatIsRoof);
 		anim.SetBool ("Roof", onRoof);
 
+        // hur snabbt älgen rör sig
 		anim.SetFloat ("Speed", Mathf.Abs (1));
 
+        // ger älgen hastighet
 		GetComponent<Rigidbody2D>().velocity = new Vector2 (1 * maxSpeed, GetComponent<Rigidbody2D>().velocity.y);
 
 
@@ -47,6 +51,7 @@ public class moosecontroller : MonoBehaviour {
 	{
 		if ((grounded ) && Input.GetKeyDown (KeyCode.Space)) 
 		{
+            // kollar vilket håll gravitation ska vara åt
 			anim.SetBool("Ground", false);
 			GetComponent<Rigidbody2D>().gravityScale *= -1;
 			onRoof = true;
