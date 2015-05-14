@@ -1,46 +1,35 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
-public class MenuScript : MonoBehaviour {
+public class MenuScript : MonoBehaviour 
+{
+    public Slider musicSlider;
+    public Slider SFSlider;
 
-	void OnGUI()
-	{
+    void Awake()
+    {
+        if (musicSlider)
+        {
+            GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("CurrentMusicVolume");
+            musicSlider.value = GetComponent<AudioSource>().volume;
+        }
+    }
+    public void ChangeScene(string sceneName)
+    {
+        Application.LoadLevel(sceneName);
+    }
 
-		
-		
-		Rect startButtonRect = new Rect(Screen.width / 2 - 40, 250, 80, 30);
+    public void MusicVolume(float musicVolume)
+    {
+        GetComponent<AudioSource>().volume = musicVolume;
+        PlayerPrefs.SetFloat("CurrentMusicVolume", GetComponent<AudioSource>().volume);
+    }
 
-		Rect highScoreButtonRect = new Rect (Screen.width / 2 - 40, 300, 100, 30);
-
-		Rect optionButtonRect = new Rect(Screen.width / 2 - 40, 350, 80, 30);
-
-		Rect quitButtonRect = new Rect(Screen.width / 2 - 40, 400, 80, 30);
-
-
-		
-		
-		if(GUI.Button(startButtonRect,"Start!"))
-		{
-			//1 är gamplayscenen
-			Application.LoadLevel(1);
-		}
-
-		if(GUI.Button(highScoreButtonRect,"High Score"))
-		{
-			
-			Debug.Log("Det finns ingen just nu :(:(");
-		}
-
-		if(GUI.Button(optionButtonRect,"options"))
-		{
-			
-			Application.LoadLevel(3);
-		}
-
-		if(GUI.Button(quitButtonRect,"Quit"))
-		{
-
-			Application.Quit();
-		}
-	}
+    public void SFVolume(float SFVolume)
+    {
+        GetComponent<AudioSource>().volume = SFVolume;
+        PlayerPrefs.SetFloat("CurrentSFVolume", GetComponent<AudioSource>().volume);
+    }
+	
 }
