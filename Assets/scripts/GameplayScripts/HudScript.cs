@@ -1,32 +1,35 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class HudScript : MonoBehaviour {
 
-	float playerScore = 0;
+	public static float playerScore;
+
+    Text text;
 
 
-	void Update () 
+    public void Start()
+    {
+        text = GetComponent<Text>();
+        playerScore = 0f;
+    }
+	public void Update () 
 	{
-        // uppdaterar poäng
+        
 		playerScore += Time.deltaTime;
+        text.text = "" + (playerScore * 10);
 	}
 
-	public void IncreaseScore(int amount)
+	public static void IncreaseScore(float amount)
 	{
-        // plussar på poäng
 		playerScore += amount;
 	}
 
-	void OnDisable()
+	public void OnDisable()
 	{
-        // sparar poängen till game over scenen
 		PlayerPrefs.SetInt ("Score", (int)(playerScore * 10));
 	}
 
-	void OnGUI()
-	{
-        // enkel text som visar poängen
-		GUI.Label(new Rect(10,10,100,30), "Score: " + (int) (playerScore * 10));
-	}
+	
 }

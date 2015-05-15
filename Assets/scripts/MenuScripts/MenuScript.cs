@@ -13,6 +13,7 @@ public class MenuScript : MonoBehaviour
         {
             GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("CurrentMusicVolume");
             musicSlider.value = GetComponent<AudioSource>().volume;
+            
         }
     }
     public void ChangeScene(string sceneName)
@@ -24,6 +25,7 @@ public class MenuScript : MonoBehaviour
     {
         GetComponent<AudioSource>().volume = musicVolume;
         PlayerPrefs.SetFloat("CurrentMusicVolume", GetComponent<AudioSource>().volume);
+        
     }
 
     public void SFVolume(float SFVolume)
