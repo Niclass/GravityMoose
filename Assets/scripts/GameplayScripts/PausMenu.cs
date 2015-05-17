@@ -3,26 +3,29 @@ using System.Collections;
 
 public class PausMenu : MonoBehaviour 
 {
-    public bool isPaused;
+    public bool isPaused = false;
     public GameObject pauseMenuCanvas;
 	
 	void Update () 
     {
-	    if(isPaused)
-        {
-            pauseMenuCanvas.SetActive(true);
-            Time.timeScale = 0f;
-        }
-        else
-        {
-            pauseMenuCanvas.SetActive(false);
-            Time.timeScale = 1f;
-        }
+		pauseMenuCanvas.SetActive(false);
+		Time.timeScale = 1f;
 
-        if(Input.GetKeyDown(KeyCode.Escape))
-        {
-            isPaused = !isPaused;
-        }
+        //if(isPaused)
+        //{
+        //    pauseMenuCanvas.SetActive(true);
+        //    Time.timeScale = 0f;
+        //}
+
+        //if(Input.GetKeyDown(KeyCode.Escape))
+        //{
+        //    isPaused = true;
+        //}
+
+        //if (isPaused = true && Input.GetKeyDown (KeyCode.Escape)) 
+        //{
+        //    isPaused = false;
+        //}
 	}
 
     public void Resume()

@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PowerupScript : MonoBehaviour
 {
-    public static float amount = 10;
+    public static int amount = 100;
     public AudioSource powerUpSoundEffect;
 
 

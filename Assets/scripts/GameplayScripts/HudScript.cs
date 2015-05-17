@@ -4,7 +4,9 @@ using UnityEngine.UI;
 
 public class HudScript : MonoBehaviour {
 
-	public static float playerScore;
+	PausMenu pause;
+
+	public static int playerScore;
 
     Text text;
 
@@ -12,16 +14,15 @@ public class HudScript : MonoBehaviour {
     public void Start()
     {
         text = GetComponent<Text>();
-        playerScore = 0f;
+        playerScore = 0;
     }
 	public void Update () 
-	{
-        
-		playerScore += Time.deltaTime;
-        text.text = "" + (playerScore * 10);
+	{   
+        playerScore += 1;
+        text.text = "" + (playerScore);
 	}
 
-	public static void IncreaseScore(float amount)
+	public static void IncreaseScore(int amount)
 	{
 		playerScore += amount;
 	}

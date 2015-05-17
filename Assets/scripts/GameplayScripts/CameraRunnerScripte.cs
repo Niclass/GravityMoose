@@ -4,12 +4,12 @@ using System.Collections;
 public class CameraRunnerScripte : MonoBehaviour {
 
 	public float speed;
+	PausMenu pause;
 
 	
 	void Update () 
 	{
-        // Kamerans hanstighet
-		this.transform.position = new Vector3 (transform.position.x + (speed * Time.deltaTime), transform.position.y, transform.position.z);
-
+			// Kamerans hanstighet
+			this.transform.position = new Vector3 (transform.position.x + (speed * Time.deltaTime), transform.position.y, transform.position.z);
 	}
 }
