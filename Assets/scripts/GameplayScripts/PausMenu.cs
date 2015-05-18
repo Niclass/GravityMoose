@@ -8,24 +8,20 @@ public class PausMenu : MonoBehaviour
 	
 	void Update () 
     {
-		pauseMenuCanvas.SetActive(false);
-		Time.timeScale = 1f;
-
-        //if(isPaused)
-        //{
-        //    pauseMenuCanvas.SetActive(true);
-        //    Time.timeScale = 0f;
-        //}
-
-        //if(Input.GetKeyDown(KeyCode.Escape))
-        //{
-        //    isPaused = true;
-        //}
-
-        //if (isPaused = true && Input.GetKeyDown (KeyCode.Escape)) 
-        //{
-        //    isPaused = false;
-        //}
+		if(isPaused)
+        {
+            pauseMenuCanvas.SetActive(true);
+            Time.timeScale = 0f;
+        }
+        else
+        {
+            pauseMenuCanvas.SetActive(false);
+            Time.timeScale = 1f;
+        }
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            isPaused = !isPaused;
+        }
 	}
 
     public void Resume()

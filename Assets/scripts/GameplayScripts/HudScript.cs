@@ -6,7 +6,7 @@ public class HudScript : MonoBehaviour {
 
 	PausMenu pause;
 
-	public static int playerScore;
+	public static float playerScore;
 
     Text text;
 
@@ -14,22 +14,22 @@ public class HudScript : MonoBehaviour {
     public void Start()
     {
         text = GetComponent<Text>();
-        playerScore = 0;
+        playerScore = 0f;
     }
 	public void Update () 
 	{   
-        playerScore += 1;
-        text.text = "" + (playerScore);
+        playerScore += Time.deltaTime;
+        text.text = "" + (playerScore );
 	}
 
-	public static void IncreaseScore(int amount)
+	public static void IncreaseScore(float amount)
 	{
 		playerScore += amount;
 	}
 
 	public void OnDisable()
 	{
-		PlayerPrefs.SetInt ("Score", (int)(playerScore * 10));
+		PlayerPrefs.SetInt ("Score", (int)(playerScore));
 	}
 
 	
