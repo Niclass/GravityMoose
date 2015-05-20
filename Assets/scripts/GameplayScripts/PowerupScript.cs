@@ -15,6 +15,5 @@ public class PowerupScript : MonoBehaviour
         HudScript.IncreaseScore(amount);
         powerUpSoundEffect.Play();
         Destroy(gameObject);
-
-    }
+}
 }

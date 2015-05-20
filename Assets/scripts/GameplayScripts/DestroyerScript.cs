@@ -12,10 +12,10 @@ public class DestroyerScript : MonoBehaviour {
 		}
 
 
-		if (other.gameObject.transform) 
-		{// destroyern förstör allt annat som går igenom
-            Destroy(other.gameObject);
-		} 
+        //if (other.gameObject.transform) 
+        //{// destroyern förstör allt annat som går igenom
+        //    Destroy(other.gameObject);
+        //} 
 
         
 

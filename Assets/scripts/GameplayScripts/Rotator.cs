@@ -1,13 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Rotator : MonoBehaviour {
+public class Rotator : MonoBehaviour
+{
 
 
-	void Update () 
-	{
+    void Update()
+    {
         // gör så power ups roterar
-		transform.Rotate (new Vector3 (45, 30, 60) * Time.deltaTime);
-
-	}
+        transform.Rotate(new Vector3(45, 30, 60) * Time.deltaTime);
+    }
 }

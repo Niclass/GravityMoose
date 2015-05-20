@@ -5,7 +5,6 @@ using UnityEngine.UI;
 public class MenuScript : MonoBehaviour 
 {
     public Slider musicSlider;
-    public Slider SFSlider;
 
     void Awake()
     {
@@ -13,7 +12,6 @@ public class MenuScript : MonoBehaviour
         {
             GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("CurrentMusicVolume");
             musicSlider.value = GetComponent<AudioSource>().volume;
-            
         }
     }
     public void ChangeScene(string sceneName)
@@ -25,13 +23,11 @@ public class MenuScript : MonoBehaviour
     {
         GetComponent<AudioSource>().volume = musicVolume;
         PlayerPrefs.SetFloat("CurrentMusicVolume", GetComponent<AudioSource>().volume);
-        
     }
 
-    public void SFVolume(float SFVolume)
+    public void Quit()
     {
-        GetComponent<AudioSource>().volume = SFVolume;
-        PlayerPrefs.SetFloat("CurrentSFVolume", GetComponent<AudioSource>().volume);
+        Application.Quit();
     }
 	
 }

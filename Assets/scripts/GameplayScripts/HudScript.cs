@@ -7,9 +7,7 @@ public class HudScript : MonoBehaviour {
 	PausMenu pause;
 
 	public static float playerScore;
-
     Text text;
-
 
     public void Start()
     {
@@ -19,7 +17,7 @@ public class HudScript : MonoBehaviour {
 	public void Update () 
 	{   
         playerScore += Time.deltaTime;
-        text.text = "" + (playerScore );
+        text.text = "" + ((int)playerScore );
 	}
 
 	public static void IncreaseScore(float amount)

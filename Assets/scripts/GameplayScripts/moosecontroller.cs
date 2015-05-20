@@ -19,18 +19,12 @@ public class moosecontroller : MonoBehaviour {
 	public LayerMask whatIsRoof;
 
 
-
-
-
 	void Start () 
 	{
         // hämtar animationen till älgen
 		anim = GetComponent<Animator> ();
 	}
 
-
-	
-	// Update is called once per frame
 	void FixedUpdate () 
 	{
 			// Kollar om boolarna är sanna eller inte
