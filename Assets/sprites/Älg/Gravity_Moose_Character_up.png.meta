@@ -1,14 +1,12 @@
 fileFormatVersion: 2
-guid: fa3b474b844cbe5429aaa392d77c8854
-timeCreated: 1429621723
+guid: d42175f8d5f08834f90e6b61929b2325
+timeCreated: 1432210956
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: "\xE4lgflip_0"
-    21300002: "\xE4lgflip_1"
-    21300004: "\xE4lgflip_2"
-    21300006: "\xE4lgflip_3"
-    21300008: "\xE4lgflip_4"
+    21300000: Gravity_Moose_Character_up_0
+    21300002: Gravity_Moose_Character_up_1
+    21300004: Gravity_Moose_Character_up_2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -54,55 +52,35 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: "\xE4lgflip_0"
+    - name: Gravity_Moose_Character_up_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 41
-        width: 141
-        height: 140
+        y: 12
+        width: 210
+        height: 165
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: "\xE4lgflip_1"
+    - name: Gravity_Moose_Character_up_1
       rect:
         serializedVersion: 2
-        x: 141
-        y: 41
-        width: 141
-        height: 140
+        x: 287
+        y: 12
+        width: 210
+        height: 165
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: "\xE4lgflip_2"
+    - name: Gravity_Moose_Character_up_2
       rect:
         serializedVersion: 2
-        x: 282
-        y: 41
-        width: 141
-        height: 140
+        x: 573
+        y: 12
+        width: 210
+        height: 165
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: "\xE4lgflip_3"
-      rect:
-        serializedVersion: 2
-        x: 423
-        y: 41
-        width: 141
-        height: 140
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: "\xE4lgflip_4"
-      rect:
-        serializedVersion: 2
-        x: 564
-        y: 41
-        width: 141
-        height: 140
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

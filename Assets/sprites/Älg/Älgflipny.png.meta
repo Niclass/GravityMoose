@@ -1,0 +1,264 @@
+fileFormatVersion: 2
+guid: 932ebb65109267343bfce6683d509b5f
+timeCreated: 1432210230
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: "\xC4lgflipny_0"
+    21300002: "\xC4lgflipny_1"
+    21300004: "\xC4lgflipny_2"
+    21300006: "\xC4lgflipny_3"
+    21300008: "\xC4lgflipny_4"
+    21300010: "\xC4lgflipny_5"
+    21300012: "\xC4lgflipny_6"
+    21300014: "\xC4lgflipny_7"
+    21300016: "\xC4lgflipny_8"
+    21300018: "\xC4lgflipny_9"
+    21300020: "\xC4lgflipny_10"
+    21300022: "\xC4lgflipny_11"
+    21300024: "\xC4lgflipny_12"
+    21300026: "\xC4lgflipny_13"
+    21300028: "\xC4lgflipny_14"
+    21300030: "\xC4lgflipny_15"
+    21300032: "\xC4lgflipny_16"
+    21300034: "\xC4lgflipny_17"
+    21300036: "\xC4lgflipny_18"
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: "\xC4lgflipny_0"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3
+        width: 190
+        height: 185
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: "\xC4lgflipny_1"
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 3
+        width: 190
+        height: 185
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: "\xC4lgflipny_2"
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 3
+        width: 183
+        height: 185
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: "\xC4lgflipny_3"
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 3
+        width: 185
+        height: 185
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: "\xC4lgflipny_4"
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 3
+        width: 180
+        height: 185
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: "\xC4lgflipny_5"
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 3
+        width: 182
+        height: 185
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: "\xC4lgflipny_6"
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 3
+        width: 180
+        height: 185
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: "\xC4lgflipny_7"
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 3
+        width: 180
+        height: 185
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: "\xC4lgflipny_8"
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 3
+        width: 190
+        height: 185
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: "\xC4lgflipny_9"
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 3
+        width: 160
+        height: 185
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: "\xC4lgflipny_10"
+      rect:
+        serializedVersion: 2
+        x: 1810
+        y: 3
+        width: 180
+        height: 185
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: "\xC4lgflipny_11"
+      rect:
+        serializedVersion: 2
+        x: 1990
+        y: 3
+        width: 180
+        height: 185
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: "\xC4lgflipny_12"
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 3
+        width: 180
+        height: 185
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: "\xC4lgflipny_13"
+      rect:
+        serializedVersion: 2
+        x: 2350
+        y: 3
+        width: 180
+        height: 185
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: "\xC4lgflipny_14"
+      rect:
+        serializedVersion: 2
+        x: 2530
+        y: 3
+        width: 180
+        height: 185
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: "\xC4lgflipny_15"
+      rect:
+        serializedVersion: 2
+        x: 2710
+        y: 3
+        width: 180
+        height: 185
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: "\xC4lgflipny_16"
+      rect:
+        serializedVersion: 2
+        x: 2890
+        y: 3
+        width: 180
+        height: 185
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: "\xC4lgflipny_17"
+      rect:
+        serializedVersion: 2
+        x: 3070
+        y: 3
+        width: 180
+        height: 185
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: "\xC4lgflipny_18"
+      rect:
+        serializedVersion: 2
+        x: 3250
+        y: 3
+        width: 180
+        height: 185
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
