@@ -2,29 +2,32 @@ Initialize engine version: 5.0.1f1 (5a2e8fe35a68)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: AMD Radeon HD 7800 Series (ID=0x6818)
-    Vendor:   ATI
-    VRAM:     2027 MB
+    Renderer: Intel(R) HD Graphics Family (ID=0xa16)
+    Vendor:   Intel
+    VRAM:     128 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: E:\Github\GravityMoose\Gravity Moose_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading E:\Github\GravityMoose\Gravity Moose_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: E:\Github\GravityMoose\Gravity Moose_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading E:\Github\GravityMoose\Gravity Moose_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: E:\Github\GravityMoose\Gravity Moose_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading E:\Github\GravityMoose\Gravity Moose_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.032 seconds
+Platform assembly: C:\Users\Niclas\Documents\plattförmspel\Gravity Moose_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Niclas\Documents\plattförmspel\Gravity Moose_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Niclas\Documents\plattförmspel\Gravity Moose_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Niclas\Documents\plattförmspel\Gravity Moose_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Niclas\Documents\plattförmspel\Gravity Moose_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Niclas\Documents\plattförmspel\Gravity Moose_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.081 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-Platform assembly: E:\Github\GravityMoose\Gravity Moose_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Niclas\Documents\plattförmspel\Gravity Moose_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Niclas\Documents\plattförmspel\Gravity Moose_Data\Managed\System.dll (this message is harmless)
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.335993 ms
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 802.
+Total: 0.342979 ms (FindLiveObjects: 0.039771 ms CreateObjectMapping: 0.021382 ms MarkObjects: 0.232644 ms  DeleteObjects: 0.048752 ms)
+
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.274322 ms
+UnloadTime: 1.145687 ms
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 499.
-Total: 0.144986 ms (FindLiveObjects: 0.024508 ms CreateObjectMapping: 0.012106 ms MarkObjects: 0.102760 ms  DeleteObjects: 0.005315 ms)
-
-DU ÄR DÖD ÄLGJÄVEL!!11
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 226.
+Total: 0.322024 ms (FindLiveObjects: 0.025659 ms CreateObjectMapping: 0.011546 ms MarkObjects: 0.163364 ms  DeleteObjects: 0.121453 ms)
 
