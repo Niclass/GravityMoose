@@ -27,14 +27,14 @@ public class HudScript : MonoBehaviour {
 
 	public void OnDisable()
 	{
-        if (playerScore > PlayerPrefs.GetInt("Score"))
+        if (playerScore > PlayerPrefs.GetInt("HighScore"))
         {
             PlayerPrefs.SetInt("Score", (int)(playerScore));
         }
-        //else
-        //{
-        //    PlayerPrefs.SetInt("Score", (int)(playerScore));
-        //}
+        else
+        {
+            PlayerPrefs.SetInt("HighScore", (int)(playerScore));
+        }
 	}
 
 	

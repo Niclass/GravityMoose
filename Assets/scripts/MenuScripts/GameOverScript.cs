@@ -6,26 +6,23 @@ public class GameOverScript : MonoBehaviour
 {
     public int score = 0;
     public int highScore = 0;
-    Text text;
+
+    public Text ScoreText;
+    public Text highScoreText; 
     
     void Start()
     {
-        //laddar in poängen spelaren fick innan game over
-        text = GetComponent<Text>();
-
-        score = PlayerPrefs.GetInt("HighScore");
+        highScore = PlayerPrefs.GetInt("highScore");
         score = PlayerPrefs.GetInt("Score");
+
+        if(score > highScore)
+        {
+            PlayerPrefs.SetInt("highScore", score);
+            PlayerPrefs.Save();
+        }
+        ScoreText.text = "Your score: " + score;
+        highScoreText.text = "High Score: " + (score > highScore ? score : highScore);
     }
 
-    void OnGUI()
-    {
-        //Ritar ut poäng
-        GUI.Label(new Rect(Screen.width / 2 -80, Screen.height / 2 + 50, 280, 300), "<color=green><size=40>Score: </size></color>" + score);
-        //GUI.Label(new Rect(Screen.width / 2 - 40, 400, 280, 300), "<color=green><size=40>High Score: </size></color>" + score);
-    }
-
-    void Text()
-    {
-        text.text = "" + ((int)highScore);
-    }
+    
 }

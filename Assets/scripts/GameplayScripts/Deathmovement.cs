@@ -4,7 +4,7 @@ using System.Collections;
 public class Deathmovement : MonoBehaviour {
 
     protected Vector3 velocity;
-    public Transform transform;
+    public Transform transformm;
     public float distance = 5f;
     public float speed = 1f;
     Vector3 originalPosition;
@@ -13,14 +13,14 @@ public class Deathmovement : MonoBehaviour {
     public void Start()
     {
         originalPosition = gameObject.transform.position;
-        transform = GetComponent<Transform>();
+        transformm = GetComponent<Transform>();
         velocity = new Vector3(0, speed, 0);
-        transform.Translate(0, velocity.y * Time.deltaTime, 0);
+        transformm.Translate(0, velocity.y * Time.deltaTime, 0);
     }
 
     void Update()
     {
-        distFromStart = transform.position.y - originalPosition.y;
+        distFromStart = transformm.position.y - originalPosition.y;
 
         if (isGoingUp)
         {
@@ -29,7 +29,7 @@ public class Deathmovement : MonoBehaviour {
             {
                 SwitchDirection();
             }
-            transform.Translate(0, -velocity.y * Time.deltaTime, 0);
+            transformm.Translate(0, -velocity.y * Time.deltaTime, 0);
         }
         else
         {
@@ -38,7 +38,7 @@ public class Deathmovement : MonoBehaviour {
             {
                 SwitchDirection();
             }
-            transform.Translate(0, velocity.y * Time.deltaTime, 0);
+            transformm.Translate(0, velocity.y * Time.deltaTime, 0);
         }
     }
 
