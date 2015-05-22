@@ -22,6 +22,7 @@ public class GameOverScript : MonoBehaviour
         }
         ScoreText.text = "Your score: " + score;
         highScoreText.text = "High Score: " + (score > highScore ? score : highScore);
+        
     }
 
     
