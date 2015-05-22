@@ -5,6 +5,7 @@ public class PowerupScript : MonoBehaviour
 {
     public static int amount = 10;
     public AudioSource powerUpSoundEffect;
+    public ParticleSystem powerUpParticleEffect;
 
 
     void OnTriggerEnter2D(Collider2D other)
@@ -14,6 +15,7 @@ public class PowerupScript : MonoBehaviour
 
         HudScript.IncreaseScore(amount);
         powerUpSoundEffect.Play();
+        powerUpParticleEffect.Play();
         Destroy(gameObject);
 }
 }
