@@ -7,7 +7,7 @@ public class DestroyerScript : MonoBehaviour {
 	{// gör så att när spelaren där så laddas game over scenen
 		if (other.tag == "Player") 
 		{
-			Application.LoadLevel(2);
+            Application.LoadLevel("GameOverScene");
 			return;
 		}
 
