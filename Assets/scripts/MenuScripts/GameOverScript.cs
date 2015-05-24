@@ -15,19 +15,21 @@ public class GameOverScript : MonoBehaviour
         highScore = PlayerPrefs.GetInt("HighScore");
         score = PlayerPrefs.GetInt("Score");
 
-        if(score > highScore)
+        if(score >= highScore)
         {
             PlayerPrefs.SetInt("HighScore", highScore);
             PlayerPrefs.SetInt("Score", score);
             PlayerPrefs.Save();
         }
+
         else
         {
             PlayerPrefs.SetInt("Score", score);
+			PlayerPrefs.Save();
         }
         
-        ScoreText.text = "Your score: " + score;
-        highScoreText.text = "High Score: " + (score > highScore ? score : highScore);
+        ScoreText.text = "Your Score: " + score;
+        highScoreText.text = "High Score: " + highScore;
         
     }
 
