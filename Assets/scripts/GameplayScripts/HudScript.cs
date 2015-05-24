@@ -29,11 +29,12 @@ public class HudScript : MonoBehaviour {
 	{
         if (playerScore > PlayerPrefs.GetInt("HighScore"))
         {
+            PlayerPrefs.SetInt("HighScore", (int)(playerScore));
             PlayerPrefs.SetInt("Score", (int)(playerScore));
         }
         else
         {
-            PlayerPrefs.SetInt("HighScore", (int)(playerScore));
+            PlayerPrefs.SetInt("Score", (int)(playerScore));
         }
 	}
 
