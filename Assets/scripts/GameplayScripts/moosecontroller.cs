@@ -51,11 +51,13 @@ public class moosecontroller : MonoBehaviour
             anim.SetBool("Ground", false);
             GetComponent<Rigidbody2D>().gravityScale *= -1;
             onRoof = true;
+            
         }
         else if ((onRoof) && Input.GetKeyDown(KeyCode.Space))
         {
             anim.SetBool("Roof", false);
             GetComponent<Rigidbody2D>().gravityScale *= -1;
+            Debug.Log("test ändra gravitation");
         }
     }
 }

@@ -9,6 +9,7 @@ public class DestroyerScript : MonoBehaviour {
 		{
             Application.LoadLevel("GameOverScene");
 			return;
+
 		}
 
 

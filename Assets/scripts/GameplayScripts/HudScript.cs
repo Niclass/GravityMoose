@@ -18,6 +18,7 @@ public class HudScript : MonoBehaviour {
 	{   
         playerScore += Time.deltaTime;
         text.text = "" + ((int)playerScore );
+
 	}
 
 	public static void IncreaseScore(float amount)
@@ -35,7 +36,9 @@ public class HudScript : MonoBehaviour {
         else
         {
             PlayerPrefs.SetInt("Score", (int)(playerScore));
+            
         }
+
 	}
 
 	

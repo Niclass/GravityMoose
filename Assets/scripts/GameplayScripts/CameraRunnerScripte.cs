@@ -11,5 +11,6 @@ public class CameraRunnerScripte : MonoBehaviour {
 	{
 			// Kamerans position och hanstighet
 			this.transform.position = new Vector3 (transform.position.x + (speed * Time.deltaTime), transform.position.y, transform.position.z);
+             
 	}
 }

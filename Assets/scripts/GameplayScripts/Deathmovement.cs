@@ -30,6 +30,7 @@ public class Deathmovement : MonoBehaviour {
                 SwitchDirection();
             }
             transformm.Translate(0, -velocity.y * Time.deltaTime, 0);
+            
         }
         else
         {
